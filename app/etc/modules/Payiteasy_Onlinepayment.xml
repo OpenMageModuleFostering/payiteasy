@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Payiteasy_Onlinepayment>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Payiteasy_Onlinepayment>
+    </modules>
+</config> 

@@ -1,0 +1,14 @@
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addCss">
+                <name>onlinepayment/onlinepayment.css</name>
+            </action>
+        </reference>
+    </default>
+    <onlinepayment_adminhtml_information_index>
+        <reference name="content">
+            <block type="onlinepayment/adminhtml_information" name="onlinepayment_information" />
+        </reference>
+    </onlinepayment_adminhtml_information_index>
+</layout>

@@ -1,0 +1,12 @@
+<?php
+    $url = $this->getUrl('onlinepayment/checkout_onepage/savePayment', array('_secure'=>true));
+?>
+<script type="text/javascript">
+    //<![CDATA[
+    Event.observe(window, 'load', function () {
+        payment.saveUrl = '<?php echo $url ?>';
+    });
+    
+    
+    //]]>
+</script>

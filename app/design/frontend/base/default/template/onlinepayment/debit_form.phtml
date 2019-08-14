@@ -1,0 +1,51 @@
+<?php $_code = $this->getMethodCode(); ?>
+
+<ul class="form-list" id="payment_form_<?php echo $_code ?>" style="display:none;">
+    <li>
+        <label for="<?php echo $_code ?>_bank_code" class="required">
+            <em>*</em><?php echo $this->__('Bank code') ?>
+        </label>
+
+        <div class="input-box">
+            <input type="text" id="<?php echo $_code ?>_bank_code" name="payment[debit_bank_code]"
+                   title="<?php echo $this->__('Bank code') ?>"
+                   class="input-text required-entry validate-debit-bank-code" value="" />
+        </div>
+    </li>
+    <li>
+        <label for="<?php echo $_code ?>_account_number"
+               class="required"><em>*</em><?php echo $this->__('Account Number') ?></label>
+
+        <div class="input-box">
+            <input type="text" id="<?php echo $_code ?>_account_number" name="payment[debit_account_number]"
+                   title="<?php echo $this->__('Account Number') ?>"
+                   class="input-text required-entry validate-debit-account-number" value=""/>
+        </div>
+    </li>
+    <li>
+        <label for="<?php echo $_code ?>_holder"><?php echo $this->__('Account Holder') ?></label>
+        <div class="input-box">
+            <input type="text" id="<?php echo $_code ?>_holder" name="payment[debit_holder]"
+                   title="<?php echo $this->__('Account Holder') ?>"
+                   class="input-text" value=""/>
+        </div>
+    </li>
+</ul>
+<script type="text/javascript">
+    Validation.add('validate-debit-bank-code', '<?php echo $this->__('Invalid bank code. The bank code must be a number and have exactly 8 digits.') ?>', function( fieldValue ) {
+        var test = new RegExp(/^[0-9]+$/);
+        if (!test.match( fieldValue ) || fieldValue.length !== 8) {
+            return false;
+        }
+
+        return true;
+    } );
+    Validation.add('validate-debit-account-number', '<?php echo $this->__('Invalid account number. The account number must contain maximum 10 digits.') ?>', function( fieldValue ) {
+        var test = new RegExp(/^[0-9]+$/);
+        if (!test.match( fieldValue ) || fieldValue.length > 10) {
+            return false;
+        }
+
+        return true;
+    } );
+</script>

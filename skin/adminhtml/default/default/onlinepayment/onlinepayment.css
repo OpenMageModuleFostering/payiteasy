@@ -1,0 +1,21 @@
+li.tab-payiteasy dl dt {
+    background: url("images/pie_mascot.png") no-repeat scroll 1px 1px #D1DEDF;;
+    padding-left: 24px;
+}
+
+
+h3.payiteasy-config-header {
+    background: url("images/pie_mascot.png") no-repeat top left;
+    color: #003B59;
+    padding: 0 25px;
+    line-height: 19px;
+    height: 19px;
+}
+
+.payiteasy-payment-hint {
+    background: url("images/payiteasy_logo.png") no-repeat scroll 5px 5px #FFFFFF;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 15px;
+    margin: 5px 0;
+    padding: 7px 10px 10px 200px;
+}
