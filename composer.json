@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/PayItEasy",
+    "name": "OpenMageModuleFostering\/PayItEasy",
     "type": "magento-module",
     "license": "free",
     "homepage": "",
     "description": "PayItEasy Online Payment Integration",
     "authors": [
-    {
-        "name": "Jason Altehoefer ",
-        "email": "jason.altehoefer@firstfinance-gmbh.de"
-    }
-],
+        {
+            "name": "Jason Altehoefer ",
+            "email": "jason.altehoefer@firstfinance-gmbh.de"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
